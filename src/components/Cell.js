@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import "../styles/Cell.css";
 
 function Cell() {
+  const [living, setLiving] = useState(false);
+
   return (
-    <div className="Cell">
-      <h3>Cell</h3>
-    </div>
+    <div
+      className={living ? "Cell living" : "Cell"}
+      onClick={() => setLiving(!living)}
+    ></div>
   );
 }
 
