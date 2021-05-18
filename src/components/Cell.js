@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/Cell.css";
 
 function Cell() {
   const [living, setLiving] = useState(false);
